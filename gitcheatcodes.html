@@ -1,0 +1,53 @@
+
+
+step1. download $git from $git-scm-com
+step2. Open $gitbash applicaiton. BASH MEANS Bourne AGAIN shell. to check $git version :$git --version //dipslays version
+step3. initially we have all the project files in a folder but to add them to $git we need to initialize them into $git folder.
+step4. $git status //gives the status of the $git
+step5. $git init // this command will add all the folders openend into $git folder. and we can see as a  MASTER branch
+step6. after initialization we need to set a username and EMAIL to $git. to do it 
+		$git config --global  user.name 'give username here'
+		$git config --global  user.email 'give email here'
+		NOTE: here when we give GLOBAL. name will be declared globally and no need to give it again. if we dont give global username will be assigned for this project.
+step7. once username and email is set. it will forever if it is GLOBAL. next is 1.WORKING DIRECTORY 2. STAGING AREA 3.REPOSITORY
+		1. WORKING DIR: after initializing the $git folder it is called working dir. all the files are copied to $git folder. whenever we are making changes in hte file $git will not know changes are made. to make $git know all the changes file need to be in staging area. i.e USING $git add . //adds all the files and folders into $git folder
+		2. STAGING AREA: this is a place where it tracks all the files added to GIT folder and displays all the changes when we commit. i.e using $git commit -m 'message here' //-m is a flag
+		3. REPO: once all the changes are made and committed. it holds all the files here. it is a local REPO. to add this to GITHUB we need to add a remote. 
+step8. once local REPO is created now we need to upload to GITHUB.
+		>create a new REPO/projectname in GITHUB
+		> $git remote //displays whether we already had a remote or not. if there are no remotes add by
+		>$git remote add "https://github.com/saikumar-kandikonda/myfirstproject.git"  //it adds the link to the remote link. here whenever we are calling it we need to give the complete link. instead of that we can create a alias to the link so that we can with the alias name. below is the code
+		>$git remote add origin "https://github.com/saikumar-kandikonda/myfirstproject.git"  //here origin is the alias name we can any name but generally it will be origin.
+		>now in git remote we will have ORIGIN name
+Step9.  after adding the remote now we need to push that to online
+		>$git push -u origin master
+
+
+
+$git log //it displays all the committed messages and every commit has a 40 hexadecimal id also called as GITID
+$git log --oneline  //gives simple code
+$MKDIR //makes a new folder
+$touch FILENAME  //creates a new file
+$git branch BRANCHNAME //used to create branch
+$git checkout BRANCHNAME //used to shift b/w branches
+$dir //displays all the files availble in the folder
+$cat FILENAME //opens the file
+$ git remote remove "remotenamehere" //removes the remote
+
+
+TO MERGE BRANCHES TO MASTER
+
+$git merge BRANCHNAME //whatever present in hte branch it will rplace all the content in the master
+
+what is GITCLONE? >$git clone "give the link here" //we can use remote repo as localrepo
+
+GITIGNORE >$git .gitignore //when we dont want to show some files we can use this option so that those files cant be seen 
+
+
+HOW TO HOST IN GITHUB FOR FREE //
+step1: create new repo with yourwebsitename.github.io and github.io is mand
+step2:download github for windows and sign in with your github account.
+step3: select clone a repo from the internet option and then give the name which you hvae given in step1.
+step4: select "view the files in your repo in explorer" option and copy all the files which you want to host.
+step5: once after all the files are uploaded into github account. to check whether website is active or not.
+goto settings: github pages:source should be master branch.

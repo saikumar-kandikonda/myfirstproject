@@ -1,12 +1,27 @@
 <html>
 
-<body>
+<body style="font-weight: 100;font-size: large; font-family:sans-serif;">
 
-    <h1>welcome to git! </h1>
-    <h1>welcome to second git! </h1>
+    <h1>This is my first github project</h1>
+    <h6>
 
-    <h1>welcome to git! </h1>
-    <h1>welcome to second git! </h1>
+        step1. download $git from $git-scm-com<br> step2. Open $gitbash applicaiton. BASH MEANS Bourne AGAIN shell. to check $git version :$git --version //dipslays version<br> step3. initially we have all the project files in a folder but to add them
+        to $git we need to initialize them into $git folder.<br> step4. $git status //gives the status of the $git<br> step5. $git init // this command will add all the folders openend into $git folder. and we can see as a MASTER branch<br> step6. after
+        initialization we need to set a username and EMAIL to $git. to do it <br> $git config --global user.name 'give username here'<br> $git config --global user.email 'give email here'<br> NOTE: here when we give GLOBAL. name will be declared globally
+        and no need to give it again. if we dont give global username will be assigned for this project.<br> step7. once username and email is set. it will forever if it is GLOBAL. next is 1.WORKING DIRECTORY 2. STAGING AREA 3.REPOSITORY<br> 1. WORKING
+        DIR: after initializing the $git folder it is called working dir. all the files are copied to $git folder. whenever we are making changes in hte file $git will not know changes are made. to make $git know all the changes file need to be in staging
+        area. i.e USING $git add . //adds all the files and folders into $git folder<br> 2. STAGING AREA: this is a place where it tracks all the files added to GIT folder and displays all the changes when we commit. i.e using $git commit -m 'message
+        here' //-m is a flag<br> 3. REPO: once all the changes are made and committed. it holds all the files here. it is a local REPO. to add this to GITHUB we need to add a remote.<br> step8. once local REPO is created now we need to upload to GITHUB.<br>        >create a new REPO/projectname in GITHUB<br> > $git remote //displays whether we already had a remote or not. if there are no remotes add by<br> >$git remote add "https://github.com/saikumar-kandikonda/myfirstproject.git" //it adds the link to
+        the remote link. here whenever we are calling it we need to give the complete link. instead of that we can create a alias to the link so that we can with the alias name. below is the code<br> >$git remote add origin "https://github.com/saikumar-kandikonda/myfirstproject.git"
+        //here origin is the alias name we can any name but generally it will be origin.<br> >now in git remote we will have ORIGIN name<br> Step9. after adding the remote now w<br>e need to push that to online<br> >$git push -u origin master $git log
+        //it displays all the committed messages and every commit has a 40 hexadecimal id also called as GITID<br> $git log --oneline //gives simple code<br> $MKDIR //makes a new folder<br> $touch FILENAME //creates a new file<br> $git branch BRANCHNAME
+        //used to create branch<br> $git checkout BRANCHNAME //used to shift b/w branches<br> $dir //displays all the files availble in the folder<br> $cat FILENAME //opens the file<br> $ git remote remove "remotenamehere" //removes the remote<br> TO
+        MERGE BRANCHES TO MASTER<br> $git merge BRANCHNAME //whatever present in hte branch it will rplace all the content in the master<br> what is GITCLONE? >$git clone "give the link here" //we can use remote repo as localrepo<br> GITIGNORE >$git .gitignore
+        //when we dont want to show some files we can use this option so that those files cant be seen <br>
+
+        <br> HOW TO HOST IN GITHUB FOR FREE // step1: create new repo with yourwebsitename.github.io and github.io is mand<br> step2:download github for windows and sign in with your github account.<br> step3: select clone a repo from the internet option
+        and then give the name which you hvae given in step1.<br> step4: select "view the files in your repo in explorer" option and copy all the files which you want to host.<br> step5: once after all the files are uploaded into github account. to check
+        whether website is active or not.<br> goto settings: github pages:source should be master branch.</h6>
 
 </body>
 
